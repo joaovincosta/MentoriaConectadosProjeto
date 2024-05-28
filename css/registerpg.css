@@ -1,3 +1,15 @@
+*{
+    text-align: center;
+}
 body{
     background-color: #B3B4A6;
+}
+button{
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 0;
+    width: 200px;
+    height: 45px;
+    margin: 10px;
 }
