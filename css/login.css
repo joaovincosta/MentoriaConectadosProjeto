@@ -1,9 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 *{
     text-align: center;
 }
+
+.italiana-regular {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.josefin-sans textos {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 body{
     background-color: #DCD2C8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+main {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+}
+
 .entrar{
     background-color: black;
     border: none;
@@ -11,12 +37,88 @@ body{
     border-radius: 0;
     width: 200px;
     height: 45px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 20px;
 }
-button{
+    
+input{
+    text-align: center;
+    display: block;
+    border-bottom: 2px solid #000;
+    background-color: #DCD2C8;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    margin: 0 auto 10px auto;
+    box-sizing: border-box;
+    width: 40%;
+    font-size: 20px;
+    text-align: left;
+}
+
+h1,h2{
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+h1{
+    font-size: 55px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+h2{
+    font-size: 40px;
+    margin: 20px;
+}
+
+label,button,a,textarea,p,input {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img{
+    width: 30px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+span{
+    font-size: 20px;
+}
+
+.socialbutton{
     background-color: #DCD2C8;
     border: 2px solid black;
     border-radius: 8px;
-    margin: 10px;
-    width: 400px;
+    margin-bottom: 15px;
+    width: 300px;
     height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.entrarcom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+a {
+    color:#000;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
 }

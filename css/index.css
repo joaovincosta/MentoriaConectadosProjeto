@@ -1,3 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.italiana-regular {
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.josefin-sans textos {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 body{
     background-color: #E58F65;
+}
+
+h1{
+    font-family: "Italiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+label,button,a,textarea,p,input {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav{
+    background-color: bisque;
+    padding: 20px;
+}
+
+a{
+    color: #000;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+/* .a{
+    display: flex;
+    justify-content: flex-end;
+} */
+
+input{
+    font-size: 25px;
+    width: 35%;
+    background-color: bisque;
+    color: #000;
+    border-bottom: 2px solid #000;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+input::placeholder {
+    color: #656565;
 }
