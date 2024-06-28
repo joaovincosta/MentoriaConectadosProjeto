@@ -15,10 +15,14 @@
         </header>
         <main>
             <h1>Entrar com e-mail e senha</h1>
-            <div class="emailsenha">
-                <input type="email" placeholder="Digite seu e-mail">
-                <input type="password" placeholder="Digite sua senha">
-            </div>
+            <form id="form">
+                <div class="emailsenha">
+                    <input type="email" placeholder="Digite seu e-mail" class="inputs required">
+                    <span class="span-required"></span>
+                    <input type="password" placeholder="Digite sua senha" class="inputs required">
+                    <span class="span-required"></span>
+                </div>
+            </form>
                 <a href="" class="a">Esqueci minha senha</a>
                 <div class="entrarcom">
                 <button class="entrar" onclick="document.location='index.html'">ENTRAR</button>
@@ -29,7 +33,7 @@
             <p>Não tem uma conta?<a href="registerpgpersonal.html"> Cadastre-se</a></p>
         </main>
         <footer>
-
         </footer>
+        <script>src="main.js"</script>
     </body>
 </html>

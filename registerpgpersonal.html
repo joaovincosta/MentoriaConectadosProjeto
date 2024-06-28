@@ -15,32 +15,31 @@
         </header>
         <main>
             <h1>Cadastrar-se</h1>
-            <div>
+            <form id="form">
                 <label>Nome completo</label>
-                <input type="text">
-                <br>
+                <input type="text" class="inputs required" oninput="nameValidate()">
+                <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
                 <label>Apelido</label>
-                <input type="text">
-                <br>
+                <input type="text" class="inputs required" oninput="apelidoValidate()">
+                <span class="span-required">Apelido deve ter mais de 1 caracter</span>
                 <label>E-mail</label>
-                <input type="email">
-                <br>
+                <input type="email" class="inputs required" oninput="emailValidate()">
+                <span class="span-required">Insira um e-mail válido</span>
                 <label>Telefone</label>
-                <input type="number">
-                <br>
+                <input type="tel" class="inputs required" oninput="foneValidate()">
+                <span class="span-required">Insira um número de telefone válido</span>
                 <label>CPF</label>
-                <input type="number">
-                <br>
+                <input type="text" class="inputs required" oninput="cpfValidate()">
+                <span class="span-required">Insira um CPF válido</span>
                 <label>Senha </label>
-                <input type="password">
-                <br>
-            </div>
+                <input type="password" class="inputs required" oninput="senhaValidate()">
+                <span class="span-required">Crie uma senha forte de no mínimo 8 caracteres</span>
+            </form>
             <button onclick="document.location='registerpgaddress.html'">PRÓXIMO</button>
-            <br>
             <p>Já tem uma conta?<a href="loginpage.html"> Entre</a></p>
         </main>
         <footer>
-
         </footer>
+        <script src="main.js"></script>
     </body>
 </html>

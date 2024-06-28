@@ -15,34 +15,35 @@
         </header>
         <main>
             <h1>Cadastrar-se</h1>
-            <div>
+            <form id="form">
                 <label>CEP</label>
-                <input type="number">
-                <br>
+                <input type="text" id="cep" required>
+                <span class="span-required"></span>
                 <label>Estado</label>
-                <input type="text">
-                <br>
+                <input type="text" id="estado" required>
+                <span class="span-required"></span>
                 <label>Cidade</label>
-                <input type="text">
-                <br>
+                <input type="text" id="cidade" required>
+                <span class="span-required"></span>
                 <label>Bairro</label>
-                <input type="text">
-                <br>
+                <input type="text" id="bairro" required>
+                <span class="span-required"></span>
                 <label>Rua</label>
-                <input type="text">
-                <br>
+                <input type="text" id="rua" required>
+                <span class="span-required"></span>
                 <label>Número</label>
-                <input type="number">
-                <br>
+                <input type="number" id="numero" required>
+                <span class="span-required"></span>
                 <label>Complemento</label>
-                <input type="text">
-                <br>
-            </div>
+                <input type="text" id="complemento" required>
+                <span class="span-required"></span>
+            </form>
             <button onclick="document.location='index.html'">CADASTRAR</button>
             <br>
             <p>Já tem uma conta?<a href="loginpage.html"> Entre</a></p>
         </main>
         <footer>
         </footer>
+        <script src="viacep.js"></script>
     </body>
 </html>
