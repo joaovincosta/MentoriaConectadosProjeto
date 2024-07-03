@@ -101,7 +101,7 @@ h1{
     text-align: center;
 }
 
-label,button,a,textarea,p,input {
+label,button,a,textarea,p,input,.span-required {
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -119,4 +119,11 @@ a {
     font-size: 22px;
     text-decoration: none;
     font-weight: bold;
+}
+
+.span-required{
+    color: #e63636;
+    display: none;
+    margin-bottom: 15px;
+    font-size: 16px;
 }

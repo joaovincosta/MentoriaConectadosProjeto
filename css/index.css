@@ -24,7 +24,17 @@ h1{
     font-style: normal;
 }
 
-label,button,a,textarea,p,input {
+h2{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 400px;
+    font-style: normal;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+label,button,a,textarea,p,input{
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -34,6 +44,9 @@ label,button,a,textarea,p,input {
 nav{
     background-color: bisque;
     padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
 }
 
 a{
@@ -56,8 +69,36 @@ input{
     border-top: 0;
     border-left: 0;
     border-right: 0;
+    padding: 10px;
 }
 
 input::placeholder {
     color: #656565;
+    font-size: 1em;
+}
+
+.banner{
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card img {
+    max-width: 80%; 
+}
+
+.card { 
+    width: calc(25% - 30px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 850px) {
+    .card {
+        width: calc(50% - 20px);
+    }
 }
