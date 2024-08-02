@@ -26,7 +26,7 @@ h1{
 
 h2{
     font-family: "Josefin Sans", sans-serif;
-    font-size: 40px;
+    font-size: 2.5em;
     font-weight: 400px;
     font-style: normal;
     text-align: center;
@@ -61,7 +61,7 @@ a{
 } */
 
 input{
-    font-size: 25px;
+    font-size: 1.7em;
     width: 35%;
     background-color: bisque;
     color: #000;
@@ -101,4 +101,57 @@ input::placeholder {
     .card {
         width: calc(50% - 20px);
     }
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel-item {
+    flex: 0 0 calc(50% - 10px);
+    margin: 0 5px;
+  }
+  
+  .carousel-item img {
+    width: 35%; 
+    height: auto; 
+  }
+
+  .carousel-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .carousel-controls button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .carousel-control-ant{
+    margin-left: 35px;
+  }
+
+  .carousel-control-prox{
+    margin-right: 38px;
+  }
+  
+footer{
+    margin-top: 10%;
+    text-align: center;
 }

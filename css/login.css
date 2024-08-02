@@ -75,7 +75,7 @@ h2{
     margin: 20px;
 }
 
-label,button,a,textarea,p,input {
+label,button,a,textarea,p,input,.span-required {
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -91,6 +91,13 @@ img{
 
 span{
     font-size: 20px;
+}
+
+.span-required{
+    color: #e63636;
+    display: none;
+    margin-bottom: 15px;
+    font-size: 16px;
 }
 
 .socialbutton{
