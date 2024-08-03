@@ -116,14 +116,6 @@ function maskcpf(v) {
     return v;
 }
 
-// Máscara para CEP
-function maskcep(v) {
-    v = v.replace(/\D/g, "");
-    v = v.replace(/(\d{5})(\d)/,'$1-$2');
-    return v;
-}
-
-
 document.addEventListener('DOMContentLoaded', function() {
     idcss('fone').addEventListener('input', function() {
         this.value = masktel(this.value);
@@ -131,11 +123,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     idcss('cpf').addEventListener('input', function() {
         this.value = maskcpf(this.value);
-    });
-
-    document.getElementById('cep').addEventListener('input', function() {
-        console.log("input")
-        this.value = maskcep(this.value);
     });
 
     campos[3].addEventListener('blur', function() {
@@ -146,10 +133,6 @@ document.addEventListener('DOMContentLoaded', function() {
         this.value = maskcpf(this.value);
     });
 
-    document.getElementById('cep').addEventListener('blur', function() {
-        console.log("blur")
-        this.value = maskcep(this.value);
-    });
 });
 
 function idcss(el) {
